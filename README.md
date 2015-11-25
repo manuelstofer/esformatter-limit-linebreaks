@@ -1,6 +1,7 @@
 # esformatter-limit-linebreaks
 
-[esformatter](https://github.com/millermedeiros/esformatter) plugin limiting linebreaks globally.
+[esformatter](https://github.com/millermedeiros/esformatter) plugin for limiting maximal consecutive line breaks globally.
+
 ## Usage
 
 install it:
@@ -14,7 +15,7 @@ and add to your esformatter config file:
 ```js
 {
   "plugins": [
-    "esformatter-align"
+    "esformatter-limit-linebreaks"
   ],
   "LimitLineBreaks": 2  // defaults to 2
 }
@@ -52,9 +53,8 @@ function hello() {
 
 ## Options
 
-"LimitLineBreaks":  Number of maximal consecutive linbreaks
+"LimitLineBreaks":  Number of maximal consecutive line breaks
 
 ## License
 
 Released under the [MIT License](http://opensource.org/licenses/MIT).
-
