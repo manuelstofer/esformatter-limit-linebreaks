@@ -1,0 +1,8 @@
+function bla() {
+  return 1;
+}
+
+
+function hello() {
+  return 2;
+}
