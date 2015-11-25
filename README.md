@@ -1,9 +1,6 @@
 # esformatter-limit-linebreaks
 
-[esformatter](https://github.com/millermedeiros/esformatter) plugin limiting linebreaks.
-
-
-
+[esformatter](https://github.com/millermedeiros/esformatter) plugin limiting linebreaks globally.
 ## Usage
 
 install it:
@@ -14,12 +11,12 @@ npm install esformatter-limit-linebreaks
 
 and add to your esformatter config file:
 
-```json
+```js
 {
   "plugins": [
     "esformatter-align"
   ],
-  "LimitLineBreaks": 2
+  "LimitLineBreaks": 2  // defaults to 2
 }
 ```
 
@@ -28,36 +25,34 @@ and add to your esformatter config file:
 input:
 
 ```js
-var longer = require('hello');
-var small = require('hello');
-var muchlonger = require('hello');
+function bla() {
+  return 1;
+}
+
+
+
+
+function hello() {
+  return 2;
+}
 ```
 
 output:
 
 ```js
-var longer     = require('hello');
-var small      = require('hello');
-var muchlonger = require('hello');
+function bla() {
+  return 1;
+}
+
+function hello() {
+  return 2;
+}
 ```
 
-input:
 
-```js
-var x = {
-  a: 5,
-  bla: ''
-};
-```
+## Options
 
-output:
-
-```js
-var x = {
-  a:   5,
-  bla: ''
-};
-```
+"LimitLineBreaks":  Number of maximal consecutive linbreaks
 
 ## License
 
