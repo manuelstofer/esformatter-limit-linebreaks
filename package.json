@@ -1,6 +1,6 @@
 {
   "name": "esformatter-limit-linebreaks",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "esformatter linebreak limit plugin",
   "main": "index.js",
   "scripts": {
